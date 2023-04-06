@@ -24,8 +24,8 @@
         </p>
         
         <div class="flex justify-center gap-3 my-8 md:block">
-            <Button buttonText="Increase" buttonFunction={increaseCounter}/>
-            <Button buttonText="Decrease" buttonFunction={decreaseCounter}/>
+            <Button on:click={increaseCounter} width="150px">Increase</Button>
+            <Button on:click={decreaseCounter} width="150px">Decrease</Button>
         </div>
 
         <p>ButtonClickCounter: {counter}</p>
